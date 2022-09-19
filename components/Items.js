@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Items({title,description,backgroundImg,leftButtonText,rightButtonText,twoButtons,first}) {
   return (
-    <div className='relative h-screen grid justify-center'>
+    <div className='relative h-screen grid justify-center bg-cover bg-center bg-no-repeat' style = {{backgroundImage: `url(${backgroundImg})`}}>
         <div className='pt-36'>
             <div className='text-center'>
                 <p className='font-bold text-3xl'>{title}</p>
@@ -12,9 +12,9 @@ function Items({title,description,backgroundImg,leftButtonText,rightButtonText,t
                     <p className='font-normal'>{description}</p>
                 </div>
             </div>
-            <div className='absolute bottom-12'>
+            <div className='absolute bottom-12 flex flex-col items-center px-[5%]'>
                 <div className='flex'>
-                   <Button imp="primary" text={leftButtonText}/>
+                   <Button imp="primary" text ={leftButtonText}/>
                    {twoButtons && ( 
                     <Button imp="secondary" text = {rightButtonText}/>
                    )}
