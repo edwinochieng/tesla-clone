@@ -1,5 +1,13 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Items from '../components/Items'
+import Model3 from "../assets/Desktop-Model3.jpeg"
+import ModelS from "../assets/Desktop-ModelS.jpeg"
+import ModelX from "../assets/Desktop-ModelX.jpeg"
+import ModelY from "../assets/Desktop-ModelY.jpeg"
+import Accessories from "../assets/Desktop-Accessories.jpg"
+import SolarPanels from "../assets/Desktop-SolarPanels.jpeg"
+import SolarRoof from "../assets/Desktop-SolarRoof.jpeg"
 
 
 export default function Home() {
@@ -11,7 +19,72 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-
+      <Items
+        title = "Model 3"
+        description = "Order Online For Touchless Delivery"
+        backgroundImg = {Model3}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+        first
+      />
+      <Items
+         title = "Model Y"
+        description = "Order Online For Touchless Delivery"
+        backgroundImg = {ModelY}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items 
+         title = "Model S"
+        description = "Order Online For Touchless Delivery"
+        backgroundImg = {ModelS}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items 
+         title = "Model X"
+        description = "Order Online For Touchless Delivery"
+        backgroundImg = {ModelX}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items
+         title = "Solar Panels"
+        description = "Lower Cost Solar Panels in America"
+        backgroundImg = {SolarPanels}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items 
+         title = "Model 3"
+        description = "Order Online For Touchless Delivery"
+        backgroundImg = {Model3}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items
+         title = "Solar Roof"
+        description = "Produce Clean Energy From Your Roof"
+        backgroundImg = {SolarRoof}
+        leftButtonText = "Custom Order"
+        rightButtonText = "Existing Memory"
+        twoButtons = "true"
+      />
+      <Items
+         title = "Accesories"
+        
+        backgroundImg = {Accessories}
+        leftButtonText = "Shop Now"
+        rightButtonText = "Existing Memory"
+        twoButtons = ""
+      />
+ 
     </div>
   )
 }
