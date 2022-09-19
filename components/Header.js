@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="fixed top-0 left-0 z-[100] w-full bg-transparent mt-4 px-12 flex justify-between font-semibold">
       <div>
-        <Image src={TeslaLogo} alt="tesla logo" height="18" width="100" />
+        <Image src={TeslaLogo} alt="tesla logo" height="16" width="120" />
       </div>
       <div>
         <ul className="flex">
